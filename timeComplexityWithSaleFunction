@@ -1,0 +1,22 @@
+ let a = sumofAll = (n)=>{
+let total = 0;
+for (let i = 0; i<=n; i++){
+    total += i;
+}
+return total;
+};
+const t0 = performance.now();
+
+console.log(a(10));
+const t1 = performance.now();
+console.log(`Call to doSomething took ${t1 - t0} milliseconds.`);
+
+
+sumofAll = (n) => {
+    return n*(n+1) /2 ;
+}
+const t3 = performance.now();
+
+console.log(sumofAll(10));
+const t4 = performance.now();
+console.log(`Call to doSomething took ${t4 - t3} milliseconds.`);
